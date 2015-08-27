@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Send Me There!</string>
+
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="Profile">Profile</string>
+    <string name="About">About</string>
+    <string name="Logout">Log out</string>
+    <string name="Edit">Edit Profile</string>
+    <string name="DriverHome">Home</string>
+    <string name="Registration">Registration</string>
+    <string name="title_activity_new_request">New Request</string>
+
+    <string name="title_activity_request_list">Request List</string>
+    <string name="title_activity_user_request_list">User Request List</string>
+    <string name="title_activity_activity_driver">Activity_driver</string>
+    <string name="title_activity_quotation_list">My Quotation</string>
+
+</resources>

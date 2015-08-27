@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.el.sendmethere2" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        //1st page
+        <activity
+            android:name=".Login_Page"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        //customer page
+        <activity
+            android:name=".CustomerRegistration"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+        <activity android:name=".CustomerHome"
+            android:label="@string/app_name">
+
+        </activity>
+
+        <activity android:name=".DriverLogin"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateVisible">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".NewRequest"
+            android:label="@string/title_activity_new_request" >
+            <intent-filter>
+                <action android:name="com.example.el.sendmethere2.NewRequest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".RequestListActivity"
+            android:label="@string/title_activity_request_list" >
+            <intent-filter>
+                <action android:name="com.example.el.sendmethere2.RequestList" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".QuotationListActivity"
+            android:label="@string/title_activity_quotation_list" >
+            <intent-filter>
+                <action android:name="com.example.el.sendmethere2.QuotationList" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserRequestListActivity"
+            android:label="@string/title_activity_user_request_list" >
+            <intent-filter>
+                <action android:name="com.example.el.sendmethere2.UserRequestList" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Activity 4 : Driver's response -->
+        <activity
+            android:name=".Activity_driver"
+            android:label="@string/title_activity_activity_driver" >
+            <intent-filter>
+                <action android:name="com.example.el.sendmethere2.Activity_driver" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".About"
+            android:label="@string/about">
+
+        </activity>
+        <activity android:name=".Profile"
+            android:label="@string/profile">
+
+        </activity>
+        <activity android:name=".EditProfile"
+            android:label="@string/Edit">
+
+        </activity>
+
+        <activity android:name=".DriverMenu"
+            android:label="@string/DriverHome">
+
+        </activity>
+
+        <activity android:name=".DriverReg"
+            android:label="@string/Registration">
+
+        </activity>
+        <activity android:name=".DriverProfile"
+            android:label="@string/profile">
+
+        </activity>
+
+
+    </application>
+
+</manifest>
